@@ -1,0 +1,28 @@
+/*Structure of the node of the binary tree
+
+struct Node {
+    int data;
+    Node *left;
+    Node *right;
+
+    Node(int val) {
+        data = val;
+        left = right = NULL;
+    }
+};
+*/
+// Return the height of the given special binary tree
+int findTreeHeight(Node* root)
+{
+	int ld = 0, rd = 0, sum = 0;
+	
+	if(root==NULL)
+	{
+	    return NULL;
+	}
+	
+	ld = 1+findTreeHeight(root->left);
+	rd = 1+findTreeHeight(root->right);
+	
+	
+}
